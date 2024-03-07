@@ -4,7 +4,7 @@ import json
 # filedata = open("data.json", 'r').read()
 # resp = requests.post("https://reqres.in/api/users", data=json.loads(filedata))
 
-resp = requests.post("https://reqres.in/api/users", data=json.loads(open("data.json", 'r').read()))
+resp = requests.post("https://reqres.in/api/users", data=json.loads(open("./api_test/data.json", 'r').read()))
 print(resp)
 print(resp.status_code)
 print(resp.json())
