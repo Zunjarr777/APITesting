@@ -2,17 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello1') {
+        stage('First_Branch') {
             steps {
                 echo 'Hello World1'
             }
         }
-        stage('Hell2o') {
+        stage('Second_Branch') {
             steps {
                 echo 'Hello World2'
             }
         }
-        stage('Hello3') {
+        stage('Third_Branch') {
+            steps {
+                echo 'Hello World3'
+            }
+        }
+        stage('Fourth_Branch') {
             steps {
                 echo 'Hello World3'
             }
